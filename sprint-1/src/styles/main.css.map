@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,2BAA2B;EACxC,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,CAAC,CAAC,CAAC,AAAA,OAAO;AACV,CAAC,AAAA,MAAM,CAAC;EACN,UAAU,EAAE,OAAO;CACpB;;ACZD,8BAA8B;AAO5B,8BAA8B;AAQ9B,gEAAgE;AAOhE,mDAAmD",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "Partials/_breakpoints.scss"
     ],
     "names": [],
     "file": "main.css"

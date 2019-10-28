@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html,
+body {
+  margin: 0;
+  font-family: "AvenirRegular", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* *:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/** media query for mobile **/
+/** media query for tablet **/
+/** media query got landscape, medium pixel density desktops **/
+/** media query for high pixel density dekstops **/
+/*# sourceMappingURL=main.css.map */
