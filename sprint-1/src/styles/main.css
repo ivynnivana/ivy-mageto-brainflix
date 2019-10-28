@@ -16,4 +16,14 @@ body {
 /** media query for tablet **/
 /** media query got landscape, medium pixel density desktops **/
 /** media query for high pixel density dekstops **/
+.header-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.main-video {
+  width: 100%;
+  height: 183px;
+}
 /*# sourceMappingURL=main.css.map */
