@@ -1,3 +1,41 @@
 .main-author{
     display: flex;
+    
+
+    &__name{
+        margin-right: 8px;
+        margin-top: 0px;
+    }
+    &__date{
+        color: $silver;
+        margin-top: 0px;
+    }
+}
+.main-container{
+    margin-left: 16px;
+}
+.main-title{
+    font-family: "AvenirBold";
+    font-size: 25px;
+    margin-top:0px;
+}
+.views-button{
+    display: flex;
+}
+
+.likes-button{
+    display: flex;
+}
+.main-paragraph {
+    font-family: "AvenirRegular";
+    width: 90%;
+    border-top: 0.4vw solid $mercury;
+    padding-top: 24px;
+    font-size: 13px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.comments-title{
+    font-family: "AvenirSemiBold";
 }

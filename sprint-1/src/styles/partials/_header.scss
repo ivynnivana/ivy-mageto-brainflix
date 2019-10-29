@@ -1,0 +1,27 @@
+.header{
+    margin-left: 16px;
+    &-input{
+        background-image: url('../assets/Icons/SVG/Icon-search.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 10px;
+        text-align: center;
+    }
+    &-button{
+        background-image: url('../assets/Icons/SVG/Icon-upload.svg');
+        background-repeat: no-repeat;
+        background-color: $brainflix_blue;
+        color: $white;
+        width: 75%;
+        height: 40px;
+        margin-right: 16px;
+        border-radius: 4px;
+    }
+    &-input{
+
+        width: 95%;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $alabaster;
+    }
+}

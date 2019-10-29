@@ -13,8 +13,10 @@ body {
 }
 
 @import "./Partials/breakpoints";
-@import "./partials/fonts";
+@import "./partials/color";
 @import "./partials/images";
+@import "./partials/color";
+@import "./partials/fonts";
 @import "./partials/video";
 @import "./partials/header";
 @import "./partials/maincontent";
