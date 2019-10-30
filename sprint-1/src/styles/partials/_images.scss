@@ -1,27 +1,37 @@
-.header-image{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+.header-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
-.main-image{
-    width: 100%;
-    height: 183px;
+.main-image {
+  width: 100%;
+  height: 183px;
 }
-.sub-img{
-    display: flex;
-    justify-content: space-around;
+.sub-img {
+  display: flex;
+  justify-content: space-around;
 }
-.sub-img2{
-    position: relative;
-    background-color: $black;
-    opacity: 0.9;
-    bottom: 35px;
+.sub-img2 {
+  position: relative;
+  background-color: $black;
+  opacity: 0.9;
+  bottom: 35px;
 }
-.sub-img3{
-    position: relative;
-    background-color: $black;
-    opacity: 0.9;
-    bottom: 30px;
-    
-  
+.sub-img3 {
+  position: relative;
+  background-color: $black;
+  opacity: 0.9;
+  bottom: 30px;
+}
+
+@include medium {
+  .img-div {
+    background-color: black;
+    height: 400px;
+  }
+  .main-image {
+    width: 91.15%;
+    height: 400px;
+    margin-left: 34px;
+  }
 }

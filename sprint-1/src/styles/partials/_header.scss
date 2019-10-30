@@ -1,27 +1,64 @@
-.header{
-    margin-left: 16px;
-    &-input{
-        background-image: url('../assets/Icons/SVG/Icon-search.svg');
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: 10px;
-        text-align: center;
-    }
-    &-button{
-        background-image: url('../assets/Icons/SVG/Icon-upload.svg');
-        background-repeat: no-repeat;
-        background-color: $brainflix_blue;
-        color: $white;
-        width: 75%;
-        height: 40px;
-        margin-right: 16px;
-        border-radius: 4px;
-    }
-    &-input{
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 169px;
 
-        width: 95%;
-        height: 40px;
-        border-radius: 4px;
-        background-color: $alabaster;
+  &-input {
+    margin-left: 16px;
+    background-image: url("../assets/Icons/SVG/Icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 10px;
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: $alabaster;
+    border-color: $alabaster;
+  }
+
+  &-button {
+    margin-left: 16px;
+    background-image: url("../assets/Icons/SVG/Icon-upload.svg");
+    background-repeat: no-repeat;
+    background-color: $brainflix_blue;
+    border-color: $brainflix_blue;
+    color: $white;
+    width: 68%;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 4px;
+  }
+  &-logo {
+    height: 48px;
+    display: flex;
+    margin-left: 95px;
+  }
+}
+
+@include medium {
+  .header {
+    height: 80px;
+
+    &-logo {
+      justify-content: flex-start;
+      margin-left: 24px;
+      margin-right: 169px;
+      margin-top: 16px;
     }
+    &-input {
+      width: 80%;
+      margin-right: 24px;
+    }
+    &-button {
+      width: 40%;
+      height: 48px;
+      margin-right: 24px;
+    }
+  }
+  .input {
+    width: 400px;
+    display: flex;
+    margin-top: 16px;
+  }
 }

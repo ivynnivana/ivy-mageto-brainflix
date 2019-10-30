@@ -49,6 +49,18 @@ body {
   bottom: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .img-div {
+    background-color: black;
+    height: 400px;
+  }
+  .main-image {
+    width: 91.15%;
+    height: 400px;
+    margin-left: 34px;
+  }
+}
+
 @font-face {
   font-family: "AvenirRegular";
   src: url(../assets/Fonts/AvenirRegular.otf);
@@ -70,33 +82,77 @@ body {
 }
 
 .header {
-  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 169px;
 }
 
 .header-input {
+  margin-left: 16px;
   background-image: url("../assets/Icons/SVG/Icon-search.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 10px;
   text-align: center;
+  width: 90%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border-color: #fafafa;
 }
 
 .header-button {
+  margin-left: 16px;
   background-image: url("../assets/Icons/SVG/Icon-upload.svg");
   background-repeat: no-repeat;
   background-color: #0095ff;
+  border-color: #0095ff;
   color: #ffffff;
-  width: 75%;
+  width: 68%;
   height: 40px;
   margin-right: 16px;
   border-radius: 4px;
 }
 
-.header-input {
-  width: 95%;
-  height: 40px;
-  border-radius: 4px;
-  background-color: #fafafa;
+.header-logo {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 95px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 24px;
+    margin-right: 169px;
+    margin-top: 16px;
+  }
+  .header-input {
+    width: 80%;
+    margin-right: 24px;
+  }
+  .header-button {
+    width: 40%;
+    height: 48px;
+    margin-right: 24px;
+  }
+  .input {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 16px;
+  }
 }
 
 .main-author {
@@ -131,10 +187,22 @@ body {
   display: flex;
 }
 
+.views-symbol {
+  margin-right: 8px;
+}
+
+.views-numbers {
+  margin-right: 24px;
+}
+
 .likes-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.likes-symbol {
+  margin-right: 8px;
 }
 
 .main-paragraph {
@@ -150,5 +218,35 @@ body {
 
 .comments-title {
   font-family: "AvenirSemiBold";
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    margin-left: 24px;
+  }
+  .main-title {
+    font-size: 35px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .main-container__two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    width: 97%;
+    border-bottom: 0.3vw solid #e1e1e1;
+  }
+  .main-author__date {
+    margin-right: 320px;
+  }
+  .main-paragraph {
+    border-top: none;
+    text-align: left;
+    width: 70%;
+    line-height: 22px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

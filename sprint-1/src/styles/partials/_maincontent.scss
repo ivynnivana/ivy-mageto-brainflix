@@ -1,41 +1,76 @@
-.main-author{
-    display: flex;
-    
+.main-author {
+  display: flex;
 
-    &__name{
-        margin-right: 8px;
-        margin-top: 0px;
-    }
-    &__date{
-        color: $silver;
-        margin-top: 0px;
-    }
+  &__name {
+    margin-right: 8px;
+    margin-top: 0px;
+  }
+  &__date {
+    color: $silver;
+    margin-top: 0px;
+  }
 }
-.main-container{
-    margin-left: 16px;
+.main-container {
+  margin-left: 16px;
 }
-.main-title{
-    font-family: "AvenirBold";
-    font-size: 25px;
-    margin-top:0px;
+.main-title {
+  font-family: "AvenirBold";
+  font-size: 25px;
+  margin-top: 0px;
 }
-.views-button{
-    display: flex;
+.views-button {
+  display: flex;
+}
+.views-symbol {
+  margin-right: 8px;
+}
+.views-numbers {
+  margin-right: 24px;
 }
 
-.likes-button{
-    display: flex;
+.likes-button {
+  display: flex;
+}
+.likes-symbol {
+  margin-right: 8px;
 }
 .main-paragraph {
-    font-family: "AvenirRegular";
-    width: 90%;
-    border-top: 0.4vw solid $mercury;
-    padding-top: 24px;
-    font-size: 13px;
-    padding-bottom: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  font-family: "AvenirRegular";
+  width: 90%;
+  border-top: 0.4vw solid $mercury;
+  padding-top: 24px;
+  font-size: 13px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.comments-title{
-    font-family: "AvenirSemiBold";
+.comments-title {
+  font-family: "AvenirSemiBold";
+}
+
+@include medium {
+  .main-container {
+    margin-left: 24px;
+  }
+  .main-title {
+    font-size: 35px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .main-container__two {
+    display: flex;
+    align-items: end;
+    width: 97%;
+    border-bottom: 0.3vw solid $mercury;
+  }
+  .main-author__date {
+    margin-right: 320px;
+  }
+
+  .main-paragraph {
+    border-top: none;
+    text-align: left;
+    width: 70%;
+    line-height: 22px;
+  }
 }

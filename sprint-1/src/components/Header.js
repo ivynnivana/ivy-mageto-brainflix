@@ -4,12 +4,12 @@ import Images from "../assets/Images/Mohan-muruge.jpg";
 
 export default function Header() {
   return (
-    <header className="header">
-      <div>
-        <div>
-          <img className="header-logo" src={Logo} alt="" />
+    <header>
+      <div className="header">
+        <div className="header-logo">
+          <img src={Logo} alt="" />
         </div>
-        <div>
+        <div className="input">
           <input
             className="header-input"
             type="text"
@@ -18,7 +18,7 @@ export default function Header() {
             placeholder="Search"
           />
           <button className="header-button">UPLOAD</button>
-          <img className="header-image" src={Images} alt="Mohan image" />
+          <img className="header-image" src={Images} alt="Mohan" />
         </div>
       </div>
     </header>
