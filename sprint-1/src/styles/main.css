@@ -91,7 +91,7 @@ body {
 }
 
 .header-input {
-  margin-left: 16px;
+  margin-left: 5%;
   background-image: url("../assets/Icons/SVG/Icon-search.svg");
   background-repeat: no-repeat;
   background-position: left;
@@ -105,7 +105,7 @@ body {
 }
 
 .header-button {
-  margin-left: 16px;
+  margin-left: 5%;
   background-image: url("../assets/Icons/SVG/Icon-upload.svg");
   background-repeat: no-repeat;
   background-color: #0095ff;
@@ -113,7 +113,7 @@ body {
   color: #ffffff;
   width: 68%;
   height: 40px;
-  margin-right: 16px;
+  margin-right: 5%;
   border-radius: 4px;
 }
 

@@ -2,6 +2,15 @@ import React from "react";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Comments from "./components/Comments";
+import Videos from "./components/Videos";
+import ImgOne from "./assets/Images/video-list-1.jpg";
+import ImgTwo from "./assets/Images/video-list-2.jpg";
+import ImgThree from "./assets/Images/video-list-3.jpg";
+import ImgFour from "./assets/Images/video-list-4.jpg";
+import ImgFive from "./assets/Images/video-list-5.jpg";
+import ImgSix from "./assets/Images/video-list-6.jpg";
+import ImgSeven from "./assets/Images/video-list-7.jpg";
+import ImgEight from "./assets/Images/video-list-8.jpg";
 
 export default function App() {
   const commentsInfo = [
@@ -21,7 +30,50 @@ export default function App() {
       name: "Theodore Duncan",
       date: "11/15/2018",
       comment:
-        "How can someone be so good!!! You can tell he lives for this and loves to do it every day. rEverytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+        "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+    }
+  ];
+
+  const videoInfo = [
+    {
+      video: ImgOne,
+      text: "Become A Travel Pro In One Easy Lesson",
+      writer: "Todd Welch"
+    },
+    {
+      video: ImgTwo,
+      text: "Les Houches The Hidden Gem Of The Chamonix",
+      writer: "Cornelia Blair"
+    },
+    {
+      video: ImgThree,
+      text: "Travel Health Useful Medical Information For",
+      writer: "Glen Harper"
+    },
+    {
+      video: ImgFour,
+      text: "Cheap Airline Tickets Great Ways To Save",
+      writer: "Emily Harper"
+    },
+    {
+      video: ImgFive,
+      text: "Take A Romantic Break In A Boutique Hotel",
+      writer: "Ethan Owen"
+    },
+    {
+      video: ImgSix,
+      text: "Choose The Perfect Accommodations",
+      writer: "Lydia Perez"
+    },
+    {
+      video: ImgSeven,
+      text: "Cruising Destination Ideas",
+      writer: "Timothy Austin"
+    },
+    {
+      video: ImgEight,
+      text: "Train Travel On Track For Safety",
+      writer: "Scotty Cranmer"
     }
   ];
   return (
@@ -29,6 +81,7 @@ export default function App() {
       <Header />
       <MainContent />
       <Comments commentsInfo={commentsInfo} />
+      <Videos videoInfo={videoInfo} />
     </>
   );
 }
