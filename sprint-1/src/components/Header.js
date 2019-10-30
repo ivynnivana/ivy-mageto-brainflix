@@ -1,22 +1,26 @@
-import React from 'react';
-import Logo from "../assets/Logo/Logo-brainflix.svg"
-import Images from "../assets/Images/Mohan-muruge.jpg"
+import React from "react";
+import Logo from "../assets/Logo/logo.svg";
+import Images from "../assets/Images/Mohan-muruge.jpg";
 
 export default function Header() {
-    return(
-        <header className="header">
-            <div>
-                <div>
-                <img className="header-logo" src={Logo} alt=""/>
-                </div>
-                <div>
-                <input className="header-input" type="text" name="name" value="" placeholder= "Search"  />
-                    <button className="header-button">UPLOAD</button>
-                    <img className="header-image" src={Images} alt="Mohan image"/>
-                </div>
-               
-            </div>
-            
-        </header>
-    )
+  return (
+    <header className="header">
+      <div>
+        <div>
+          <img className="header-logo" src={Logo} alt="" />
+        </div>
+        <div>
+          <input
+            className="header-input"
+            type="text"
+            name="name"
+            value=""
+            placeholder="Search"
+          />
+          <button className="header-button">UPLOAD</button>
+          <img className="header-image" src={Images} alt="Mohan image" />
+        </div>
+      </div>
+    </header>
+  );
 }
