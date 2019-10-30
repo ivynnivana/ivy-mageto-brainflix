@@ -4,12 +4,13 @@ export default function Videos(props) {
   const videoSection = props.videoInfo.map(vids => {
     return (
       <div>
-        <img src={vids.video} />
-        <div>{vids.text}</div>
-        <div>{vids.writer}</div>
+        <p className="video-title">NEXT VIDEO</p>
+        <img className="video-container" src={vids.video} />
+        <div className="video-text">{vids.text}</div>
+        <div className="video-writer">{vids.writer}</div>
       </div>
     );
   });
 
-  return <section>{videoSection}</section>;
+  return <section className="video-section">{videoSection}</section>;
 }

@@ -5,13 +5,13 @@ export default function Comments(props) {
     return (
       <div>
         <div>
-          <div>{comments.name}</div>
-          <div>{comments.date}</div>
+          <div className="comment-name">{comments.name}</div>
+          <div className="comment-date">{comments.date}</div>
         </div>
-        <div>{comments.comment}</div>
+        <div className="comment-text">{comments.comment}</div>
       </div>
     );
   });
 
-  return <section>{commentSection}</section>;
+  return <section className="comment-section">{commentSection}</section>;
 }
