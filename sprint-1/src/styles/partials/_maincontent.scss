@@ -105,11 +105,29 @@
   border-top: none;
   border-bottom: none;
 }
+.text-container {
+  width: 55vw;
+  line-height: 20px;
+  margin-left: 16px;
+}
+.video-text {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+}
+.video-writer {
+  width: 95%;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
 .comment-text {
   font-size: 14px;
   font-family: "AvenirRegular";
   width: 95%;
   margin-left: 60px;
+  margin-bottom: 24px;
 }
 .comment-name {
   font-family: "AvenirSemiBold";
@@ -149,5 +167,89 @@
     text-align: left;
     width: 70%;
     line-height: 22px;
+  }
+  .comments-title {
+    font-family: "AvenirSemiBold";
+  }
+  .button {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: $mercury;
+    border-color: $mercury;
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 16px;
+  }
+  .form-title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: 60px;
+    color: $silver;
+    font-family: "AvenirSemiBold";
+    font-size: 12px;
+  }
+  .form-input {
+    width: 60%;
+    height: 35px;
+    border-color: $brainflix_blue;
+    border-radius: 4px;
+    color: black;
+    font-family: "AvenirRegular";
+    margin-bottom: 24px;
+  }
+  .form-button {
+    background-color: $brainflix_blue;
+    border-color: $brainflix_blue;
+    color: $white;
+    border-radius: 4px;
+    width: 20.83%;
+    height: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    &:hover {
+      background-color: $instock_blue_dark;
+      border-color: $instock_blue_dark;
+    }
+  }
+  .comment-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93.75%;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-top: 0.2vw solid $mercury;
+    border-bottom: 0.2vw solid $mercury;
+  }
+  .comment-container:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+  }
+  .comment-text {
+    font-size: 14px;
+    font-family: "AvenirRegular";
+    width: 81.25%;
+    margin-left: 60px;
+    margin-bottom: 24px;
+  }
+  .comment-name {
+    font-family: "AvenirSemiBold";
+    font-size: 13.5px;
+    width: 15%;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 30px;
+  }
+  .comment-date {
+    font-size: 14px;
+    color: $silver;
+    margin-bottom: 0;
+    margin-top: 18px;
   }
 }

@@ -36,26 +36,18 @@
 .video-container {
   display: flex;
   width: 100%;
-}
-.video-element {
-  width: 40%;
-  height: 70px;
-  border-radius: 4px;
-  margin-right: 5%;
   margin-bottom: 24px;
 }
-.video-text {
+.element-container {
+  width: 37vw;
+  height: 22vw;
+}
+.video-element {
   width: 100%;
-  text-align: left;
-  font-size: 15px;
-  font-family: "AvenirSemiBold";
+  height: 70px;
+  border-radius: 4px;
 }
-.video-writer {
-  width: 95%;
-  text-align: left;
-  font-size: 13px;
-  margin-top: 10px;
-}
+
 .form-img {
   width: 45px;
   height: 45px;

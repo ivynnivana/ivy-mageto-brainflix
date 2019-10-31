@@ -5,7 +5,9 @@ export default function Videos(props) {
     return (
       <div>
         <div className="video-container">
-          <img className="video-element" src={vids.video} />
+          <div className="element-container">
+            <img className="video-element" src={vids.video} />
+          </div>
           <div className="text-container">
             <div className="video-text">{vids.text}</div>
             <div className="video-writer">{vids.writer}</div>
