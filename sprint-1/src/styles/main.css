@@ -97,6 +97,22 @@ body {
     height: 400px;
     margin-left: 34px;
   }
+  .element-container {
+    width: 15vw;
+    height: 10vw;
+  }
+  .video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .video-element {
+    width: 100%;
+    height: 70px;
+    border-radius: 4px;
+  }
 }
 
 @font-face {
@@ -474,6 +490,23 @@ body {
   .comment-container:nth-child(2) {
     border-top: none;
     border-bottom: none;
+  }
+  .text-container {
+    width: 25vw;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+  .video-text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-family: "AvenirSemiBold";
+  }
+  .video-writer {
+    width: 95%;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
   }
   .comment-text {
     font-size: 14px;

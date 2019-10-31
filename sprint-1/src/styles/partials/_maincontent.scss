@@ -231,6 +231,23 @@
     border-top: none;
     border-bottom: none;
   }
+  .text-container {
+    width: 25vw;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+  .video-text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-family: "AvenirSemiBold";
+  }
+  .video-writer {
+    width: 95%;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+  }
   .comment-text {
     font-size: 14px;
     font-family: "AvenirRegular";
