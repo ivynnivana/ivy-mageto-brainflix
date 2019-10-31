@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 169px;
+  margin-right: 16px;
 
   &-input {
     margin-left: 5%;
@@ -24,10 +25,14 @@
     background-color: $brainflix_blue;
     border-color: $brainflix_blue;
     color: $white;
-    width: 68%;
+    width: 70%;
     height: 40px;
     margin-right: 5%;
     border-radius: 4px;
+    &:hover {
+      background-color: $instock_blue_dark;
+      border-color: $instock_blue_dark;
+    }
   }
   &-logo {
     height: 48px;

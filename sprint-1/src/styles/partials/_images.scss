@@ -23,7 +23,45 @@
   opacity: 0.9;
   bottom: 30px;
 }
-
+.video-section {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.video-title {
+  margin: 40px 0;
+  color: $silver;
+  font-family: "AvenirSemiBold";
+  font-size: 14px;
+}
+.video-container {
+  display: flex;
+  width: 100%;
+}
+.video-element {
+  width: 40%;
+  height: 70px;
+  border-radius: 4px;
+  margin-right: 5%;
+  margin-bottom: 24px;
+}
+.video-text {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-family: "AvenirSemiBold";
+}
+.video-writer {
+  width: 95%;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.form-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin-right: 14px;
+}
 @include medium {
   .img-div {
     background-color: black;

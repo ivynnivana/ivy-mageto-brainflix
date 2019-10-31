@@ -6,6 +6,7 @@ import FullScreenButton from "../assets/Icons/SVG/Icon-fullscreen.svg";
 import VolumeButton from "../assets/Icons/SVG/Icon-volume.svg";
 import LikesButton from "../assets/Icons/SVG/Icon-likes.svg";
 import ViewsButton from "../assets/Icons/SVG/Icon-views.svg";
+import MohanImg from "../assets/Images/Mohan-muruge.jpg";
 
 export default function MainContent() {
   return (
@@ -47,6 +48,24 @@ export default function MainContent() {
             after his first Red Cow Rampage title
           </p>
           <span className="comments-title">3 Comments</span>
+          <div>
+            <p className="form-title">JOIN THE CONVERSATION</p>
+          </div>
+          <form>
+            <div className="form-container">
+              <img className="form-img" src={MohanImg} alt="avatar" />
+              <input
+                className="form-input"
+                type="text"
+                name="name"
+                value=""
+                placeholder="That was easily the most spectacular BMX moment ever."
+              />
+              <button className="form-button" type="submit" value="reset form">
+                COMMENT
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </main>

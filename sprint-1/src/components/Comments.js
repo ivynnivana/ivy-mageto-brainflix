@@ -3,11 +3,10 @@ import React from "react";
 export default function Comments(props) {
   const commentSection = props.commentsInfo.map(comments => {
     return (
-      <div>
-        <div>
-          <div className="comment-name">{comments.name}</div>
-          <div className="comment-date">{comments.date}</div>
-        </div>
+      <div className="comment-container">
+        <button className="button"></button>
+        <h4 className="comment-name">{comments.name}</h4>
+        <h5 className="comment-date">{comments.date}</h5>
         <div className="comment-text">{comments.comment}</div>
       </div>
     );

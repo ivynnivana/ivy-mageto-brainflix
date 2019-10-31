@@ -47,7 +47,84 @@
 .comments-title {
   font-family: "AvenirSemiBold";
 }
+.button {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: $mercury;
+  border-color: $mercury;
+}
 
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+.form-title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  color: $silver;
+  font-family: "AvenirSemiBold";
+  font-size: 12px;
+}
+.form-input {
+  width: 72%;
+  height: 80px;
+  border-color: $brainflix_blue;
+  border-radius: 4px;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 16px;
+}
+.form-button {
+  background-color: $brainflix_blue;
+  border-color: $brainflix_blue;
+  color: $white;
+  border-radius: 4px;
+  width: 74%;
+  height: 40px;
+  margin-bottom: 24px;
+  margin-left: 60px;
+  &:hover {
+    background-color: $instock_blue_dark;
+    border-color: $instock_blue_dark;
+  }
+}
+.comment-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-top: 0.4vw solid $mercury;
+  border-bottom: 0.4vw solid $mercury;
+}
+.comment-container:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+}
+.comment-text {
+  font-size: 14px;
+  font-family: "AvenirRegular";
+  width: 95%;
+  margin-left: 60px;
+}
+.comment-name {
+  font-family: "AvenirSemiBold";
+  font-size: 13.5px;
+  width: 34.38%;
+  margin-right: 35px;
+  margin-bottom: 0;
+  height: 30px;
+}
+.comment-date {
+  font-size: 14px;
+  color: $silver;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
 @include medium {
   .main-container {
     margin-left: 24px;
