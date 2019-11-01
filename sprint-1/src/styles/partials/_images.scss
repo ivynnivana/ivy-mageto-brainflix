@@ -79,7 +79,7 @@
     border-radius: 4px;
   }
 }
-@include large {
+@include huge {
   body {
     overflow-x: hidden;
   }
@@ -89,9 +89,10 @@
     width: 100%;
   }
   .main-image {
-    width: 92.19%;
+    width: 65.56%;
     height: 540px;
-    margin-left: 34px;
+    margin-left: 17.22%;
+    margin-right: 17.22%;
   }
   .element-container {
     width: 15vw;

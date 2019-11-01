@@ -4,6 +4,7 @@
   &__name {
     margin-right: 8px;
     margin-top: 0px;
+    font-family: "AvenirSemiBold";
   }
   &__date {
     color: $silver;
@@ -156,7 +157,7 @@
     display: flex;
     align-items: end;
     width: 97%;
-    border-bottom: 0.3vw solid $mercury;
+    border-bottom: 0.1vw solid $mercury;
   }
   .main-author__date {
     margin-right: 320px;
@@ -167,6 +168,7 @@
     text-align: left;
     width: 70%;
     line-height: 22px;
+    border-top: none;
   }
   .comments-title {
     font-family: "AvenirSemiBold";
@@ -268,5 +270,40 @@
     color: $silver;
     margin-bottom: 0;
     margin-top: 18px;
+  }
+}
+
+@include huge {
+  .main-container {
+    margin-left: 12.5%;
+    width: 49.44%;
+  }
+  .main-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .main-author {
+    &__name {
+      margin-right: 8px;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+    &__date {
+      color: $silver;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+  }
+  .main-paragraph {
+    font-family: "AvenirRegular";
+    width: 75%;
+    padding-top: 24px;
+    font-size: 13px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .views-button {
+    font-size: 13px;
   }
 }

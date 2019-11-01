@@ -67,3 +67,32 @@
     margin-top: 16px;
   }
 }
+@include huge {
+  .header {
+    height: 80px;
+
+    &-logo {
+      justify-content: flex-start;
+      margin-left: 12.5%;
+      margin-right: 35.35%;
+      margin-top: 16px;
+    }
+    &-input {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 24px;
+    }
+    &-button {
+      width: 45%;
+      height: 48px;
+      margin-right: 24px;
+    }
+  }
+  .input {
+    width: 400px;
+    display: flex;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

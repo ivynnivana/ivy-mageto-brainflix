@@ -115,7 +115,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   body {
     overflow-x: hidden;
   }
@@ -125,9 +125,10 @@ body {
     width: 100%;
   }
   .main-image {
-    width: 92.19%;
+    width: 65.56%;
     height: 540px;
-    margin-left: 34px;
+    margin-left: 17.22%;
+    margin-right: 17.22%;
   }
   .element-container {
     width: 15vw;
@@ -247,6 +248,39 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 80px;
+  }
+  .header-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 12.5%;
+    margin-right: 35.35%;
+    margin-top: 16px;
+  }
+  .header-input {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 24px;
+  }
+  .header-button {
+    width: 45%;
+    height: 48px;
+    margin-right: 24px;
+  }
+  .input {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .main-author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +290,7 @@ body {
 .main-author__name {
   margin-right: 8px;
   margin-top: 0px;
+  font-family: "AvenirSemiBold";
 }
 
 .main-author__date {
@@ -444,7 +479,7 @@ body {
         -ms-flex-align: end;
             align-items: end;
     width: 97%;
-    border-bottom: 0.3vw solid #e1e1e1;
+    border-bottom: 0.1vw solid #e1e1e1;
   }
   .main-author__date {
     margin-right: 320px;
@@ -454,6 +489,7 @@ body {
     text-align: left;
     width: 70%;
     line-height: 22px;
+    border-top: none;
   }
   .comments-title {
     font-family: "AvenirSemiBold";
@@ -560,6 +596,39 @@ body {
     color: #afafaf;
     margin-bottom: 0;
     margin-top: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-container {
+    margin-left: 12.5%;
+    width: 49.44%;
+  }
+  .main-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .main-author__name {
+    margin-right: 8px;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+  .main-author__date {
+    color: #afafaf;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+  .main-paragraph {
+    font-family: "AvenirRegular";
+    width: 75%;
+    padding-top: 24px;
+    font-size: 13px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .views-button {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
