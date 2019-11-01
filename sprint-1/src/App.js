@@ -80,8 +80,10 @@ export default function App() {
     <>
       <Header />
       <MainContent />
-      <Comments commentsInfo={commentsInfo} />
-      <Videos videoInfo={videoInfo} />
+      <div className="flex-item">
+        <Comments commentsInfo={commentsInfo} />
+        <Videos videoInfo={videoInfo} />
+      </div>
     </>
   );
 }

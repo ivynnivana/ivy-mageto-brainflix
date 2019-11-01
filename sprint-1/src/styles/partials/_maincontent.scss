@@ -55,7 +55,7 @@
   margin-right: 20px;
   border-radius: 100%;
   background-color: $mercury;
-  border-color: $mercury;
+  border-style: none;
 }
 
 .form-container {
@@ -82,7 +82,7 @@
 }
 .form-button {
   background-color: $brainflix_blue;
-  border-color: $brainflix_blue;
+  border-style: none;
   color: $white;
   border-radius: 4px;
   width: 74%;
@@ -99,8 +99,8 @@
   flex-wrap: wrap;
   margin-left: 16px;
   margin-right: 16px;
-  border-top: 0.4vw solid $mercury;
-  border-bottom: 0.4vw solid $mercury;
+  border-top: 0.1vw solid $mercury;
+  border-bottom: 0.1vw solid $mercury;
 }
 .comment-container:nth-child(2) {
   border-top: none;
@@ -226,13 +226,8 @@
     width: 93.75%;
     margin-left: 24px;
     margin-right: 24px;
-    border-top: 0.2vw solid $mercury;
-    border-bottom: 0.2vw solid $mercury;
   }
-  .comment-container:nth-child(2) {
-    border-top: none;
-    border-bottom: none;
-  }
+
   .text-container {
     width: 25vw;
     line-height: 20px;
@@ -276,7 +271,7 @@
 @include huge {
   .main-container {
     margin-left: 12.5%;
-    width: 49.44%;
+    width: 100%;
   }
   .main-title {
     font-size: 30px;
@@ -303,7 +298,24 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .flex-item {
+    display: flex;
+    justify-content: space-around;
+  }
   .views-button {
     font-size: 13px;
+  }
+  .comment-section {
+    margin-left: 9%;
+    width: 97%;
+  }
+  .comment-container {
+    width: 100%;
+  }
+  .text-container {
+    width: 15vw;
+  }
+  .main-cont {
+    width: 712px;
   }
 }
