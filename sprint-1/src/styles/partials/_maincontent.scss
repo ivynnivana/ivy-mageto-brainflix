@@ -153,6 +153,9 @@
     margin-top: 24px;
     margin-bottom: 0px;
   }
+  .main-author {
+    margin-top: 10px;
+  }
   .main-container__two {
     display: flex;
     align-items: end;
@@ -278,6 +281,8 @@
     margin-top: 10px;
   }
   .main-author {
+    margin-top: 10px;
+
     &__name {
       margin-right: 8px;
       margin-top: 0px;
@@ -317,5 +322,6 @@
   }
   .main-cont {
     width: 712px;
+    margin-top: 20px;
   }
 }
