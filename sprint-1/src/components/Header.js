@@ -7,7 +7,7 @@ export default function Header() {
     <header>
       <div className="header">
         <div className="header-logo">
-          <img src={Logo} alt="" />
+          <img className="header-img" src={Logo} alt="" />
         </div>
         <div className="input">
           <input
@@ -17,8 +17,10 @@ export default function Header() {
             value=""
             placeholder="Search"
           />
-          <button className="header-button">UPLOAD</button>
-          <img className="header-image" src={Images} alt="Mohan" />
+          <div className="button-container">
+            <button className="header-button">UPLOAD</button>
+            <img className="header-image" src={Images} alt="Mohan" />
+          </div>
         </div>
       </div>
     </header>

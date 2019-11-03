@@ -14,7 +14,7 @@
     padding-left: 10vw;
     font-size: 15px;
     background-size: 15px;
-    width: 90%;
+    width: 70vw;
     height: 40px;
     border-radius: 4px;
     background-color: $alabaster;
@@ -29,9 +29,9 @@
     border-style: none;
     color: $white;
     font-size: 14px;
-    background-position-x: 20vw;
+    background-position-x: 15vw;
     background-position-y: 4.2vw;
-    width: 70%;
+    width: 70vw;
     height: 40px;
     margin-right: 5%;
     border-radius: 4px;
@@ -45,6 +45,16 @@
     display: flex;
     margin-left: 95px;
   }
+}
+.button-container {
+  display: flex;
+  margin-top: 10px;
+}
+.input {
+  margin-left: 16px;
+}
+.header-img {
+  margin-top: 10px;
 }
 
 @include medium {
@@ -60,6 +70,7 @@
     &-input {
       width: 90%;
       margin-right: 24px;
+      margin-left: 0px;
       font-size: 16px;
       background-position-x: 1vw;
       text-align: left;
@@ -69,15 +80,31 @@
       width: 90%;
     }
     &-button {
-      width: 40%;
+      width: 80%;
       height: 48px;
+      font-size: 15px;
+      padding: 15px 20px 15px 25px;
       margin-right: 24px;
+      background-position-x: 1vw;
+      background-position-y: 2.2vw;
     }
   }
   .input {
     width: 55%;
     display: flex;
     margin-top: 16px;
+  }
+  .header-img {
+    margin-top: 0px;
+  }
+  .button-container {
+    margin-top: 0;
+  }
+}
+@include large {
+  .header-button {
+    background-position-y: 1.8vw;
+    background-position-x: 0.6vw;
   }
 }
 @include huge {
@@ -96,9 +123,13 @@
       margin-right: 24px;
     }
     &-button {
-      width: 45%;
+      width: 60%;
       height: 48px;
+      font-size: 20px;
+      padding-bottom: 25px;
       margin-right: 24px;
+      background-position-y: 1.3vw;
+      background-position-x: 0.5vw;
     }
   }
   .input {

@@ -18,8 +18,8 @@ body {
 /** media query got landscape, medium pixel density desktops **/
 /** media query for high pixel density dekstops **/
 .header-image {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 40px;
   border-radius: 100%;
 }
 
@@ -67,6 +67,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .header-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
   .img-div {
     background-color: black;
     height: 400px;
@@ -174,7 +179,7 @@ body {
   padding-left: 10vw;
   font-size: 15px;
   background-size: 15px;
-  width: 90%;
+  width: 70vw;
   height: 40px;
   border-radius: 4px;
   background-color: #fafafa;
@@ -189,9 +194,9 @@ body {
   border-style: none;
   color: #ffffff;
   font-size: 14px;
-  background-position-x: 20vw;
+  background-position-x: 15vw;
   background-position-y: 4.2vw;
-  width: 70%;
+  width: 70vw;
   height: 40px;
   margin-right: 5%;
   border-radius: 4px;
@@ -210,6 +215,21 @@ body {
   margin-left: 95px;
 }
 
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.input {
+  margin-left: 16px;
+}
+
+.header-img {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     height: 80px;
@@ -225,6 +245,7 @@ body {
   .header-input {
     width: 90%;
     margin-right: 24px;
+    margin-left: 0px;
     font-size: 16px;
     background-position-x: 1vw;
     text-align: left;
@@ -234,9 +255,13 @@ body {
     width: 90%;
   }
   .header-button {
-    width: 40%;
+    width: 80%;
     height: 48px;
+    font-size: 15px;
+    padding: 15px 20px 15px 25px;
     margin-right: 24px;
+    background-position-x: 1vw;
+    background-position-y: 2.2vw;
   }
   .input {
     width: 55%;
@@ -244,6 +269,19 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-top: 16px;
+  }
+  .header-img {
+    margin-top: 0px;
+  }
+  .button-container {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-button {
+    background-position-y: 1.8vw;
+    background-position-x: 0.6vw;
   }
 }
 
@@ -265,9 +303,13 @@ body {
     margin-right: 24px;
   }
   .header-button {
-    width: 45%;
+    width: 60%;
     height: 48px;
+    font-size: 20px;
+    padding-bottom: 25px;
     margin-right: 24px;
+    background-position-y: 1.3vw;
+    background-position-x: 0.5vw;
   }
   .input {
     width: 35%;
@@ -379,6 +421,7 @@ body {
   height: 80px;
   border-color: #0095ff;
   border-radius: 4px;
+  font-size: 2.5vw;
   color: black;
   font-family: "AvenirRegular";
   margin-bottom: 16px;
@@ -524,6 +567,8 @@ body {
   .form-input {
     width: 60%;
     height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
     border-color: #0095ff;
     border-radius: 4px;
     color: black;
@@ -592,6 +637,12 @@ body {
     color: #afafaf;
     margin-bottom: 0;
     margin-top: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-input {
+    padding-left: 10px;
   }
 }
 
