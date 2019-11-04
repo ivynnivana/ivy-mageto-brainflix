@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Logo from "../assets/Logo/logo.svg";
 import Images from "../assets/Images/Mohan-muruge.jpg";
 

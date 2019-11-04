@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Vid from "../assets/Images/brainstation.mp4";
 import Images from "../assets/Images/video-list-0.jpg";
 // import PlayButton from "../assets/Icons/SVG/Icon-play.svg";
