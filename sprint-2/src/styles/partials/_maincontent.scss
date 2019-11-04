@@ -1,0 +1,335 @@
+.main-author {
+  display: flex;
+
+  &__name {
+    margin-right: 8px;
+    margin-top: 0px;
+    font-family: "AvenirSemiBold";
+  }
+  &__date {
+    color: $silver;
+    margin-top: 0px;
+  }
+}
+.main-container {
+  margin-left: 16px;
+}
+.main-title {
+  font-family: "AvenirBold";
+  font-size: 25px;
+  margin-top: 0px;
+}
+.views-button {
+  display: flex;
+}
+.views-symbol {
+  margin-right: 8px;
+}
+.views-numbers {
+  margin-right: 24px;
+}
+
+.likes-button {
+  display: flex;
+}
+.likes-symbol {
+  margin-right: 8px;
+}
+.main-paragraph {
+  font-family: "AvenirRegular";
+  width: 90%;
+  border-top: 0.4vw solid $mercury;
+  padding-top: 24px;
+  font-size: 13px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.comments-title {
+  font-family: "AvenirSemiBold";
+}
+.button {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: $mercury;
+  border-style: none;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+.form-title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  color: $silver;
+  font-family: "AvenirSemiBold";
+  font-size: 12px;
+}
+.form-input {
+  width: 72%;
+  height: 80px;
+  border-color: $brainflix_blue;
+  border-radius: 4px;
+  font-size: 2.5vw;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 16px;
+}
+.form-button {
+  background-color: $brainflix_blue;
+  border-style: none;
+  color: $white;
+  border-radius: 4px;
+  width: 74%;
+  height: 40px;
+  margin-bottom: 24px;
+  margin-left: 60px;
+  &:hover {
+    background-color: $instock_blue_dark;
+    border-color: $instock_blue_dark;
+  }
+}
+.comment-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-top: 0.1vw solid $mercury;
+  border-bottom: 0.1vw solid $mercury;
+}
+.comment-container:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+}
+.text-container {
+  width: 55vw;
+  line-height: 20px;
+  margin-left: 16px;
+}
+.video-text {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+}
+.video-writer {
+  width: 95%;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.comment-text {
+  font-size: 14px;
+  font-family: "AvenirRegular";
+  width: 95%;
+  margin-left: 60px;
+  margin-bottom: 24px;
+}
+.comment-name {
+  font-family: "AvenirSemiBold";
+  font-size: 13.5px;
+  width: 34.38%;
+  margin-right: 35px;
+  margin-bottom: 0;
+  height: 30px;
+}
+.comment-date {
+  font-size: 14px;
+  color: $silver;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+@include medium {
+  .main-container {
+    margin-left: 24px;
+  }
+  .main-title {
+    font-size: 35px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .main-author {
+    margin-top: 10px;
+  }
+  .main-container__two {
+    display: flex;
+    align-items: end;
+    width: 97%;
+    border-bottom: 0.1vw solid $mercury;
+  }
+  .main-author__date {
+    margin-right: 320px;
+  }
+
+  .main-paragraph {
+    border-top: none;
+    text-align: left;
+    width: 70%;
+    line-height: 22px;
+    border-top: none;
+  }
+  .comments-title {
+    font-family: "AvenirSemiBold";
+  }
+  .button {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: $mercury;
+    border-color: $mercury;
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 16px;
+  }
+  .form-title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: 60px;
+    color: $silver;
+    font-family: "AvenirSemiBold";
+    font-size: 12px;
+  }
+  .form-input {
+    width: 60%;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-color: $brainflix_blue;
+    border-radius: 4px;
+    color: black;
+    font-family: "AvenirRegular";
+    margin-bottom: 24px;
+  }
+  .form-button {
+    background-color: $brainflix_blue;
+    border-color: $brainflix_blue;
+    color: $white;
+    border-radius: 4px;
+    width: 20.83%;
+    height: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    &:hover {
+      background-color: $instock_blue_dark;
+      border-color: $instock_blue_dark;
+    }
+  }
+  .comment-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93.75%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .text-container {
+    width: 25vw;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+  .video-text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-family: "AvenirSemiBold";
+  }
+  .video-writer {
+    width: 95%;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .comment-text {
+    font-size: 14px;
+    font-family: "AvenirRegular";
+    width: 81.25%;
+    margin-left: 60px;
+    margin-bottom: 24px;
+  }
+  .comment-name {
+    font-family: "AvenirSemiBold";
+    font-size: 13.5px;
+    width: 15%;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 30px;
+  }
+  .comment-date {
+    font-size: 14px;
+    color: $silver;
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
+}
+@include large {
+  .form-input {
+    padding-left: 10px;
+  }
+}
+
+@include huge {
+  .main-container {
+    margin-left: 12.5%;
+    width: 100%;
+  }
+  .main-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .main-author {
+    margin-top: 10px;
+
+    &__name {
+      margin-right: 8px;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+    &__date {
+      color: $silver;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+  }
+  .main-paragraph {
+    font-family: "AvenirRegular";
+    width: 75%;
+    padding-top: 24px;
+    font-size: 13px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .flex-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .views-button {
+    font-size: 13px;
+  }
+  .comment-section {
+    margin-left: 9%;
+    width: 97%;
+  }
+  .comment-container {
+    width: 100%;
+  }
+  .text-container {
+    width: 15vw;
+  }
+  .main-cont {
+    width: 712px;
+    margin-top: 20px;
+  }
+}
