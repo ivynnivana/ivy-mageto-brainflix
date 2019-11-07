@@ -1,20 +1,20 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-// export default function Videos(props) {
-class Videos extends React.Component {
+export default class Videos extends React.Component {
   render() {
-    const videoInfo = this.props.videoInfo;
-
-    const videoSection = videoInfo.map(vids => {
+    const videoSection = this.props.videoInfo.map(vids => {
       return (
         <div>
           <div className="video-container">
             <div className="element-container">
-              <img className="video-element" src={vids.video} />
+              <Link to={`${vids.id}`}>
+                <img className="video-element" src={vids.image} />
+              </Link>
             </div>
             <div className="text-container">
-              <div className="video-text">{vids.text}</div>
-              <div className="video-writer">{vids.writer}</div>
+              <div className="video-text">{vids.title}</div>
+              <div className="video-writer">{vids.channel}</div>
             </div>
           </div>
         </div>
@@ -31,6 +31,3 @@ class Videos extends React.Component {
     );
   }
 }
-
-export default Videos;
-// }
