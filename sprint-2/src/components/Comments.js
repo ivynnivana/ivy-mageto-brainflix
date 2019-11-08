@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import axios from "axios";
 import LikesButton from "../assets/Icons/SVG/Icon-likes.svg";
 import ViewsButton from "../assets/Icons/SVG/Icon-views.svg";
 import MohanImg from "../assets/Images/Mohan-muruge.jpg";
 // index is just the i
-// ? goes before query parameters
+// ? goes before query parameters when you want to add things like api keys
 // & give more than one query parameter
 // query parameter : key=value
 

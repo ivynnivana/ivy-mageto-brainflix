@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import MainContent from "../components/MainContent";
 
 export default class Videos extends React.Component {
   render() {

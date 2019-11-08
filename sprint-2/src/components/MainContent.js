@@ -16,25 +16,44 @@ export default class MainContent extends React.Component {
       )
       .then(answer => {
         console.log(answer.data);
+        this.setState({ videoInfo: answer.data });
         axios
           .get(
-            `https://project-2-api.herokuapp.com/videos/1af0jruup5gu/?api_key=a0eceb6e-ee0b-4a90-8328-4a760e06963c`
+            `https://project-2-api.herokuapp.com/videos/${this.props.id}/?api_key=a0eceb6e-ee0b-4a90-8328-4a760e06963c`
           )
           .then(res => {
-            console.log(res);
-            this.setState({ mainInfo: res.data, videoInfo: answer.data });
+            console.log(res.data.id);
+            this.setState({ mainInfo: res.data });
           });
       });
   }
 
   componentDidUpdate(previous) {
+    const filtered = this.state.videoInfo.findIndex(video => {
+      return video.id === this.props.id;
+    });
+    if (this.state.mainInfo) {
+      const newVideo = {
+        id: this.state.mainInfo.id,
+        title: this.state.mainInfo.title,
+        channel: this.state.mainInfo.channel,
+        image: this.state.mainInfo.image
+      };
+      this.state.videoInfo.push(newVideo);
+    }
+
+    this.state.videoInfo.splice(filtered, 1);
+
     if (this.props !== previous) {
       axios
         .get(
           `https://project-2-api.herokuapp.com/videos/${this.props.id}/?api_key=a0eceb6e-ee0b-4a90-8328-4a760e06963c`
         )
         .then(res => {
-          this.setState({ mainInfo: res.data });
+          this.setState({
+            mainInfo: res.data,
+            videoInfo: this.state.videoInfo
+          });
         });
     }
   }

@@ -9,9 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header />
-
         <BrowserRouter>
+          <Header />
           <Switch>
             <Route path="/upload" component={Upload} />
             <Route
