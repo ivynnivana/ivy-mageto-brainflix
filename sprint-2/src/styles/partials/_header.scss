@@ -5,7 +5,7 @@
   margin-right: 16px;
 
   &-input {
-    margin-left: 5%;
+    // margin-left: 5%;
     background-image: url("../assets/Icons/SVG/Icon-search.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -17,12 +17,13 @@
     width: 70vw;
     height: 40px;
     border-radius: 4px;
+    border-style: none;
+    border: 0.2vw solid $mercury;
     background-color: $alabaster;
-    border-color: $alabaster;
   }
 
   &-button {
-    margin-left: 5%;
+    // margin-left: 5%;
     background-image: url("../assets/Icons/SVG/Icon-upload.svg");
     background-repeat: no-repeat;
     background-color: $brainflix_blue;
@@ -54,7 +55,7 @@
   margin-left: 16px;
 }
 .header-img {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 @include medium {
@@ -65,7 +66,7 @@
       justify-content: flex-start;
       margin-left: 24px;
       margin-right: 169px;
-      margin-top: 16px;
+      margin-top: 25px;
     }
     &-input {
       width: 90%;
@@ -115,7 +116,7 @@
       justify-content: flex-start;
       margin-left: 12.5%;
       margin-right: 35.35%;
-      margin-top: 16px;
+      margin-top: 22px;
     }
     &-input {
       width: 100%;

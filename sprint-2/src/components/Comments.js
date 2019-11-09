@@ -64,7 +64,7 @@ export default class Comments extends React.Component {
             <form>
               <div className="form-container">
                 <img className="form-img" src={MohanImg} alt="avatar" />
-                <input
+                <textarea
                   className="form-input"
                   type="text"
                   name="name"

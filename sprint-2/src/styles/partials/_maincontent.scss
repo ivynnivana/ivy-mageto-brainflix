@@ -74,6 +74,7 @@
 .form-input {
   width: 72%;
   height: 80px;
+  padding-top: 15px;
   border-color: $brainflix_blue;
   border-radius: 4px;
   font-size: 2.5vw;
@@ -145,6 +146,82 @@
   margin-bottom: 0;
   margin-top: 18px;
 }
+.upload-title {
+  font-family: "AvenirBold";
+  width: 100%;
+  border-top: 0.1vw solid $mercury;
+  padding-top: 24px;
+  padding-left: 5vw;
+}
+
+.thumbnail-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+  margin-left: 5vw;
+}
+.input-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+  margin-left: 5vw;
+  margin-bottom: 4px;
+}
+.title-input {
+  width: 86%;
+  height: 35px;
+  font-size: 15px;
+  padding-left: 10px;
+  border-style: none;
+  border: 0.2vw solid $mercury;
+  background-color: $alabaster;
+  border-radius: 4px;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 13px;
+  margin-left: 5vw;
+}
+.description-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+  margin-left: 5vw;
+  margin-bottom: 4px;
+}
+
+.description-input {
+  width: 86%;
+  height: 143px;
+  font-size: 15px;
+  background-size: 60px;
+  padding-top: 15px;
+  padding-left: 10px;
+  border-style: none;
+  border: 0.2vw solid $mercury;
+  background-color: $alabaster;
+  border-radius: 4px;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 13px;
+  margin-left: 5vw;
+}
+.publish-button {
+  background-color: $brainflix_blue;
+  border-style: none;
+  color: $white;
+  margin-left: 5vw;
+  font-size: 14px;
+  background-position-x: 15vw;
+  background-position-y: 4.2vw;
+  width: 90vw;
+  height: 40px;
+  margin-right: 5%;
+  border-radius: 4px;
+  &:hover {
+    background-color: $instock_blue_dark;
+    border-color: $instock_blue_dark;
+  }
+}
 @include medium {
   .main-container {
     margin-left: 24px;
@@ -202,6 +279,7 @@
   }
   .form-input {
     width: 60%;
+    padding-top: 0px;
     height: 35px;
     font-size: 15px;
     padding-left: 10px;
