@@ -901,5 +901,9 @@ body {
   .upload-input__container {
     width: 80%;
   }
+  .publish-button {
+    width: 11.1%;
+    margin-left: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
