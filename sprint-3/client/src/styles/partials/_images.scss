@@ -1,0 +1,141 @@
+.header-image {
+  width: 45px;
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 7px;
+}
+
+.main-image {
+  width: 100%;
+  height: 183px;
+}
+
+.video-section {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.video-title {
+  margin: 40px 0;
+  color: $silver;
+  font-family: "AvenirSemiBold";
+  font-size: 14px;
+}
+.video-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.element-container {
+  width: 37vw;
+  height: 22vw;
+}
+.video-element {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.form-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin-right: 14px;
+}
+.thumbnail-image {
+  width: 90%;
+  height: 153x;
+  border-radius: 4px;
+  margin-bottom: 26px;
+}
+.thumbnail-container {
+  margin-left: 5vw;
+  width: 100%;
+}
+@include medium {
+  .header-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  .img-div {
+    background-color: black;
+    height: 400px;
+  }
+  .main-image {
+    width: 91.15%;
+    height: 400px;
+    margin-left: 34px;
+  }
+
+  .element-container {
+    width: 15vw;
+    height: 10vw;
+  }
+  .video-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .video-element {
+    width: 100%;
+    height: 70px;
+    border-radius: 4px;
+  }
+  .thumbnail-image {
+    width: 49.5%;
+    height: 183x;
+    border-radius: 4px;
+    margin-left: 0px;
+  }
+  .thumbnail-container {
+    width: 88%;
+    border-top: 0.1vw solid $mercury;
+    margin-right: 0px;
+  }
+}
+@include huge {
+  body {
+    overflow-x: hidden;
+  }
+  .img-div {
+    background-color: black;
+    height: 540px;
+    width: 100%;
+  }
+  .main-image {
+    width: 65.56%;
+    height: 540px;
+    margin-left: 17.22%;
+    margin-right: 17.22%;
+  }
+  .element-container {
+    width: 9vw;
+    height: 10vw;
+  }
+  .video-container {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 24px;
+  }
+  .video-element {
+    width: 100%;
+    height: 70px;
+    border-radius: 4px;
+  }
+  .video-section {
+    margin-left: 0;
+  }
+  .video-title {
+    margin: 20px 0;
+  }
+  .thumbnail-image {
+    width: 100%;
+  }
+  .thumbnail-container {
+    width: 30%;
+    border-top: none;
+    margin-left: 0px;
+  }
+}

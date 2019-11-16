@@ -1,0 +1,500 @@
+.main-author {
+  display: flex;
+
+  &__name {
+    margin-right: 8px;
+    margin-top: 0px;
+    font-family: "AvenirSemiBold";
+  }
+  &__date {
+    color: $silver;
+    margin-top: 0px;
+  }
+}
+.main-container {
+  margin-left: 16px;
+}
+.main-title {
+  font-family: "AvenirBold";
+  font-size: 25px;
+  margin-top: 0px;
+}
+.views-button {
+  display: flex;
+}
+.views-symbol {
+  margin-right: 8px;
+}
+.views-numbers {
+  margin-right: 24px;
+}
+
+.likes-button {
+  display: flex;
+}
+.likes-symbol {
+  margin-right: 8px;
+}
+.main-paragraph {
+  font-family: "AvenirRegular";
+  width: 90%;
+  border-top: 0.4vw solid $mercury;
+  padding-top: 24px;
+  font-size: 13px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.comments-title {
+  font-family: "AvenirSemiBold";
+}
+.button {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: $mercury;
+  border-style: none;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+.form-title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: 60px;
+  color: $silver;
+  font-family: "AvenirSemiBold";
+  font-size: 12px;
+}
+.form-input {
+  width: 72%;
+  height: 80px;
+  padding-top: 15px;
+  border-color: $brainflix_blue;
+  border-radius: 4px;
+  font-size: 2.5vw;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 16px;
+}
+.form-button {
+  background-color: $brainflix_blue;
+  border-style: none;
+  color: $white;
+  border-radius: 4px;
+  width: 74%;
+  height: 40px;
+  margin-bottom: 24px;
+  margin-left: 60px;
+  &:hover {
+    background-color: $instock_blue_dark;
+    border-color: $instock_blue_dark;
+  }
+}
+.comment-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-top: 0.1vw solid $mercury;
+  border-bottom: 0.1vw solid $mercury;
+}
+.comment-container:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+}
+.text-container {
+  width: 55vw;
+  line-height: 20px;
+  margin-left: 16px;
+}
+.video-text {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+}
+.video-writer {
+  width: 95%;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.comment-text {
+  font-size: 14px;
+  font-family: "AvenirRegular";
+  width: 95%;
+  margin-left: 60px;
+  margin-bottom: 24px;
+}
+.comment-name {
+  font-family: "AvenirSemiBold";
+  font-size: 13.5px;
+  width: 34.38%;
+  margin-right: 35px;
+  margin-bottom: 0;
+  height: 30px;
+}
+.comment-date {
+  font-size: 14px;
+  color: $silver;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+.upload-title {
+  font-family: "AvenirBold";
+  width: 100%;
+  border-top: 0.1vw solid $mercury;
+  padding-top: 24px;
+  padding-left: 5vw;
+}
+
+.thumbnail-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+}
+.input-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+  margin-left: 5vw;
+  margin-bottom: 4px;
+}
+.title-input {
+  width: 86%;
+  height: 35px;
+  font-size: 15px;
+  padding-left: 10px;
+  border-style: none;
+  border: 0.2vw solid $mercury;
+  background-color: $alabaster;
+  border-radius: 4px;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 13px;
+  margin-left: 5vw;
+}
+.description-title {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $silver;
+  margin-left: 5vw;
+  margin-bottom: 4px;
+}
+
+.description-input {
+  width: 86%;
+  height: 143px;
+  font-size: 15px;
+  background-size: 60px;
+  padding-top: 15px;
+  padding-left: 10px;
+  border-style: none;
+  border: 0.2vw solid $mercury;
+  background-color: $alabaster;
+  border-radius: 4px;
+  color: black;
+  font-family: "AvenirRegular";
+  margin-bottom: 13px;
+  margin-left: 5vw;
+}
+.publish-button {
+  background-color: $brainflix_blue;
+  border-style: none;
+  color: $white;
+  margin-left: 5vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-position-x: 15vw;
+  background-position-y: 4.2vw;
+  width: 90vw;
+  height: 40px;
+  margin-right: 5%;
+  border-radius: 4px;
+  &:hover {
+    background-color: $instock_blue_dark;
+    border-color: $instock_blue_dark;
+  }
+}
+.cancel-button {
+  font-size: 14px;
+  font-family: "AvenirSemiBold";
+  color: $brainflix_blue;
+  margin-left: 5vw;
+  margin-bottom: 30px;
+  margin-left: 41vw;
+  width: 50%;
+}
+@include medium {
+  .main-container {
+    margin-left: 24px;
+  }
+  .main-title {
+    font-size: 35px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .main-author {
+    margin-top: 10px;
+  }
+  .main-container__two {
+    display: flex;
+    align-items: end;
+    width: 97%;
+    border-bottom: 0.1vw solid $mercury;
+  }
+  .main-author__date {
+    margin-right: 320px;
+  }
+
+  .main-paragraph {
+    border-top: none;
+    text-align: left;
+    width: 70%;
+    line-height: 22px;
+    border-top: none;
+  }
+  .comments-title {
+    font-family: "AvenirSemiBold";
+  }
+  .button {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: $mercury;
+    border-color: $mercury;
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 16px;
+  }
+  .form-title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: 60px;
+    color: $silver;
+    font-family: "AvenirSemiBold";
+    font-size: 12px;
+  }
+  .form-input {
+    width: 60%;
+    padding-top: 0px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-color: $brainflix_blue;
+    border-radius: 4px;
+    color: black;
+    font-family: "AvenirRegular";
+    margin-bottom: 24px;
+  }
+  .form-button {
+    background-color: $brainflix_blue;
+    border-color: $brainflix_blue;
+    color: $white;
+    border-radius: 4px;
+    width: 20.83%;
+    height: 40px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    &:hover {
+      background-color: $instock_blue_dark;
+      border-color: $instock_blue_dark;
+    }
+  }
+  .comment-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93.75%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .text-container {
+    width: 25vw;
+    line-height: 20px;
+    margin-left: 16px;
+  }
+  .video-text {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    font-family: "AvenirSemiBold";
+  }
+  .video-writer {
+    width: 95%;
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .comment-text {
+    font-size: 14px;
+    font-family: "AvenirRegular";
+    width: 81.25%;
+    margin-left: 60px;
+    margin-bottom: 24px;
+  }
+  .comment-name {
+    font-family: "AvenirSemiBold";
+    font-size: 13.5px;
+    width: 15%;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 30px;
+  }
+  .comment-date {
+    font-size: 14px;
+    color: $silver;
+    margin-bottom: 0;
+    margin-top: 18px;
+  }
+  .upload-title {
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .thumbnail-title {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .description-title {
+    margin-left: 0px;
+  }
+  .description-input {
+    margin-left: 0;
+    width: 98%;
+    margin-bottom: 40px;
+  }
+  .description-container {
+    width: 88%;
+    border-bottom: 0.1vw solid $mercury;
+    margin-left: 5vw;
+  }
+  .publish-button {
+    margin-top: 30px;
+    width: 20.8%;
+    float: right;
+    margin-right: 6.5%;
+    margin-left: 6%;
+  }
+  .cancel-button {
+    width: 8%;
+    margin: 0px;
+    float: right;
+    margin-top: 40px;
+  }
+  .title-input {
+    width: 86.5%;
+  }
+}
+@include large {
+  .form-input {
+    padding-left: 10px;
+  }
+}
+
+@include huge {
+  .main-container {
+    margin-left: 12.5%;
+    width: 100%;
+  }
+  .main-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .main-author {
+    margin-top: 10px;
+
+    &__name {
+      margin-right: 8px;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+    &__date {
+      color: $silver;
+      margin-top: 0px;
+      font-size: 13px;
+    }
+  }
+  .main-paragraph {
+    font-family: "AvenirRegular";
+    width: 75%;
+    padding-top: 24px;
+    font-size: 13px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .flex-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  .views-button {
+    font-size: 13px;
+  }
+  .comment-section {
+    margin-left: 9%;
+    width: 97%;
+  }
+  .comment-container {
+    width: 100%;
+  }
+  .text-container {
+    width: 15vw;
+  }
+  .main-cont {
+    width: 712px;
+    margin-top: 20px;
+  }
+  .upload-container {
+    display: flex;
+  }
+  .description-container {
+    border-bottom: none;
+    margin: 0px;
+  }
+  .description-input {
+    margin-left: 70px;
+    width: 100%;
+  }
+  .description-title {
+    margin-left: 70px;
+  }
+  .upload-container {
+    border-top: 0.1vw solid $mercury;
+    border-bottom: 0.1vw solid $mercury;
+    width: 80%;
+    margin-left: 13vw;
+  }
+  .upload-title {
+    margin-left: 7vw;
+    border-top: none;
+  }
+  .upload-page {
+    width: 100%;
+    border-top: 0.1vw solid $mercury;
+  }
+  .title-input {
+    width: 40vw;
+    width: 88%;
+  }
+  .upload-input__container {
+    width: 80%;
+  }
+  .publish-button {
+    width: 11.1%;
+    margin-left: 0px;
+  }
+}
