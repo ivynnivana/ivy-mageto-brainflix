@@ -1,8 +1,25 @@
 import React from "react";
 import Thumbnail from "../assets/Images/Upload-video-preview.jpg";
+import axios from "axios";
+
 export default function Upload() {
+  const submitButton = eventHandler => {
+    eventHandler.preventDefault();
+    console.log(eventHandler);
+    const title = eventHandler.target.title.value;
+    const description = eventHandler.target.description.value;
+    axios
+      .post("http://localhost:5000/api/videos", {
+        title,
+        description,
+        image: Thumbnail
+      })
+      .then(res => {
+        console.log(res);
+      });
+  };
   return (
-    <div className="upload-page">
+    <form className="upload-page" onSubmit={submitButton}>
       <h2 className="upload-title">Upload Video</h2>
       <div className="upload-container">
         <section className="thumbnail-container">
@@ -16,8 +33,7 @@ export default function Upload() {
             <input
               className="title-input"
               type="text"
-              name="name"
-              value=""
+              name="title"
               placeholder="Add a title to your video"
             />
           </div>
@@ -26,8 +42,7 @@ export default function Upload() {
             <textarea
               className="description-input"
               type="text"
-              name="name"
-              value=""
+              name="description"
               placeholder="Add a description of your video"
             />
           </div>
@@ -35,6 +50,6 @@ export default function Upload() {
       </div>
       <button className="publish-button">PUBLISH</button>
       <p className="cancel-button">CANCEL</p>
-    </div>
+    </form>
   );
 }
